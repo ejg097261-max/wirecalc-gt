@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - WireCalc GT</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+<header>
+    <h1>WireCalc GT</h1>
+    <p>Calculadora Inteligente de Selección de Conductores</p>
+</header>
+
+<nav>
+    <a href="index.html">Inicio</a>
+    <a href="calculadora.html">Calculadora</a>
+    <a href="seguridad.html">Seguridad</a>
+</nav>
+
+<main>
+
+```
+<section class="card">
+
+    <h2>Calculadora de carga eléctrica</h2>
+
+    <p>
+        Ingrese los datos de su instalación para obtener una recomendación
+        de calibre de cable basada en potencia, voltaje y distancia.
+    </p>
+
+    <label for="distancia">Distancia (metros)</label>
+    <input
+        type="number"
+        id="distancia"
+        placeholder="Ejemplo: 80">
+
+    <label for="potencia">Potencia total (Watts)</label>
+    <input
+        type="number"
+        id="potencia"
+        placeholder="Ejemplo: 1200">
+
+    <label for="voltaje">Voltaje</label>
+    <select id="voltaje">
+        <option value="110">110 V</option>
+        <option value="220">220 V</option>
+    </select>
+
+    <button onclick="calcularCable()">
+        Calcular Recomendación
+    </button>
+
+    <hr style="margin:20px 0;">
+
+    <div id="resultado">
+
+        <h3>Resultado del análisis</h3>
+
+        <p>
+            Complete los datos y presione el botón calcular.
+        </p>
+
+        <p>
+            El sistema analizará:
+        </p>
+
+        <ul>
+            <li>Potencia total conectada</li>
+            <li>Voltaje de operación</li>
+            <li>Distancia del recorrido</li>
+            <li>Corriente estimada</li>
+            <li>Calibre recomendado</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="card">
+
+    <h2>Fórmula utilizada</h2>
+
+    <p>
+        La corriente se calcula utilizando la fórmula:
+    </p>
+
+    <p>
+        <strong>I = P / V</strong>
+    </p>
+
+    <p>
+        Donde:
+    </p>
+
+    <ul>
+        <li>I = Corriente en amperios (A)</li>
+        <li>P = Potencia en watts (W)</li>
+        <li>V = Voltaje (V)</li>
+    </ul>
+
+</section>
+
+<section class="card">
+
+    <h2>¿Cómo se determina la recomendación?</h2>
+
+    <p>
+        WireCalc GT analiza la potencia ingresada, el voltaje seleccionado
+        y la distancia del recorrido eléctrico. Con estos datos calcula la
+        corriente estimada y recomienda un calibre AWG adecuado.
+    </p>
+
+    <table>
+
+        <tr>
+            <th>Distancia</th>
+            <th>Calibre sugerido</th>
+        </tr>
+
+        <tr>
+            <td>Hasta 20 m</td>
+            <td>14 AWG</td>
+        </tr>
+
+        <tr>
+            <td>20 a 50 m</td>
+            <td>12 AWG</td>
+        </tr>
+
+        <tr>
+            <td>50 a 80 m</td>
+            <td>10 AWG</td>
+        </tr>
+
+        <tr>
+            <td>80 m o más</td>
+            <td>8 AWG</td>
+        </tr>
+
+    </table>
+
+    <p>
+        El indicador de seguridad mostrado es una referencia educativa
+        que representa el margen disponible entre la corriente calculada
+        y la capacidad aproximada del conductor recomendado.
+    </p>
+
+</section>
+```
+
+</main>
+
+<footer>
+    <p>Proyecto Final Introducción a Sistemas - WireCalc GT</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

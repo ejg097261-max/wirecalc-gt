@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    color:#333;
+}
+
+header{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+nav{
+    background:#163a5c;
+    text-align:center;
+    padding:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    text-decoration:underline;
+}
+
+main{
+    width:90%;
+    max-width:1000px;
+    margin:20px auto;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+
+table, th, td{
+    border:1px solid #ccc;
+}
+
+th{
+    background:#1f4e79;
+    color:white;
+}
+
+th, td{
+    padding:12px;
+    text-align:center;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+input, select{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:15px;
+    padding:12px;
+    border:none;
+    background:#1f4e79;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#163a5c;
+}
+
+footer{
+    background:#1f4e79;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:20px;
+}
+
+img{
+    max-width:400px;
+    width:100%;
+    height:auto;
+    display:block;
+    margin:15px auto;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#1f4e79;
+    color:white;
+    margin-top:20px;
+}
+
+.barra{
+width:100%;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+margin-top:10px;
+}
+
+.progreso{
+background:#1f4e79;
+color:white;
+text-align:center;
+padding:10px;
+font-weight:bold;
+}
+
+#resultado img{
+width:100%;
+max-width:500px;
+display:block;
+margin:20px auto;
+border-radius:10px;
+}
